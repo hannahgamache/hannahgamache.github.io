@@ -2,23 +2,88 @@
 <title>Hannah's Engineering and Design Projects</title>
 <head>
 <style>
-body	{background-color: powderblue;}
-<! h1	{color: blue;} >
-p	{color:blue;}
+
+* {
+  box-sizing: border-box;
+}
+
+<!-- body	{background-color: powderblue;} -->
+<!-- h1	{color: blue;} -->
+p	{color:#4A3A5B;}
+header {
+  background-color: #C49AF4;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: #4A3A5B;
+}
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+nav {
+  float: left;
+  width: 30%;
+  background: #9374B7;
+  padding: 20px;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #9374B7;
+
+}
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+footer {
+  background-color: #C49AF4;
+  padding: 10px;
+  text-align: center;
+  color: #4A3A5B;
+}
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
 </style>
 </head>
 
 <body>
 
-<h1 style="color:blue; text-align:center;"> Hannah's Projects</h>
-<p> paragraph of general overview</p>
-<a href=" link "> This is a link of xyz</a>
-<img src="filename.jpg" alt="website.com" width="104" height="142">
+<header>
+<h1 style="text-align:center;"> Hannah's Projects</h1>
+</header>
 
-<hr>
-<h3> Automotive RFID Door Unlock</h3>
-<p> This is information about the project</p>
-<p> This is the current status and next steps</p>
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">RFID Projects</a></li>
+      <li><a href="#">Project 2</a></li>
+      <li><a href="#">Project 3</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>RFID Projects</h1>
+    <p>blah blah blah automotive rfid</p>
+    <p>blah blah computer opener rfid</p>
+  </article>
+</section>
+
+<footer>
+  <p>How to contact me</p>
+</footer>
 
 
 </body>
